@@ -1,0 +1,41 @@
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background shape with glow effect -->
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Abstract character shape -->
+  <path d="M200,50 C300,50 350,150 350,250 C350,350 300,450 200,450 C100,450 50,350 50,250 C50,150 100,50 200,50 Z" fill="#0f0" fill-opacity="0.1" stroke="#0f0" stroke-width="2" filter="url(#glow)" />
+  
+  <!-- Character internal details -->
+  <path d="M200,100 C275,100 325,175 325,250 C325,325 275,400 200,400 C125,400 75,325 75,250 C75,175 125,100 200,100 Z" fill="#0f0" fill-opacity="0.1" stroke="#0f0" stroke-width="2" />
+  
+  <path d="M200,150 C250,150 300,200 300,250 C300,300 250,350 200,350 C150,350 100,300 100,250 C100,200 150,150 200,150 Z" fill="#0f0" fill-opacity="0.1" stroke="#0f0" stroke-width="2" />
+  
+  <!-- Center core -->
+  <circle cx="200" cy="250" r="50" fill="#0f0" fill-opacity="0.3" />
+  
+  <!-- Digital circuit lines -->
+  <path d="M75,250 L150,250" stroke="#0f0" stroke-width="1" stroke-dasharray="5,5" />
+  <path d="M250,250 L325,250" stroke="#0f0" stroke-width="1" stroke-dasharray="5,5" />
+  <path d="M200,150 L200,200" stroke="#0f0" stroke-width="1" stroke-dasharray="5,5" />
+  <path d="M200,300 L200,350" stroke="#0f0" stroke-width="1" stroke-dasharray="5,5" />
+  
+  <!-- Abstract digital face elements -->
+  <circle cx="175" cy="225" r="10" fill="#0f0" fill-opacity="0.5" />
+  <circle cx="225" cy="225" r="10" fill="#0f0" fill-opacity="0.5" />
+  <path d="M175,275 Q200,295 225,275" fill="none" stroke="#0f0" stroke-width="2" />
+  
+  <!-- Connection points -->
+  <circle cx="100" cy="200" r="5" fill="#0f0" />
+  <circle cx="300" cy="200" r="5" fill="#0f0" />
+  <circle cx="100" cy="300" r="5" fill="#0f0" />
+  <circle cx="300" cy="300" r="5" fill="#0f0" />
+  
+  <!-- Data streams -->
+  <path d="M50,150 Q100,75 200,75 Q300,75 350,150" fill="none" stroke="#0f0" stroke-width="1" stroke-dasharray="2,2" />
+  <path d="M50,350 Q100,425 200,425 Q300,425 350,350" fill="none" stroke="#0f0" stroke-width="1" stroke-dasharray="2,2" />
+</svg>
