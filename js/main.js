@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         spoofer: {
             name: "Valorant SPOOFER",
-            price: "₺199<span>/aylık</span>",
+            price: "₺899<span>/lifetime</span>",
             description: "Valorant SPOOFER, bilgisayarınızın donanım kimliğini (HWID) değiştirerek ban sonrası bile aynı bilgisayardan oyuna geri dönmenizi sağlar. Maximum güvenlik için vazgeçilmez bir üründür.",
             features: [
                 "HWID (Donanım Kimliği) Değiştirme",
